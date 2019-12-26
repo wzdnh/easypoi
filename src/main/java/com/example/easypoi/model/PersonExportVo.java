@@ -44,5 +44,7 @@ public class PersonExportVo implements Serializable {
      * 请教下日期格式化问题
      */
     @Excel(name = "创建时间", orderNum = "4", format = "yyyy-MM-dd HH.mm.ss", width = 30)
-    private LocalDateTime cratetime;
+    private String cratetime;
+
+
 }

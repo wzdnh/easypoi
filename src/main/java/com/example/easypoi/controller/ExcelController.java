@@ -38,7 +38,7 @@ public class ExcelController {
             personVo.setUsername("张三" + i);
             personVo.setPhoneNumber("18888888888");
             personVo.setImageUrl("/static/user1-128x128.jpg");
-            personVo.setCratetime(LocalDateTime.now());
+            personVo.setCratetime("2019-3-20 11:10:20");
             personList.add(personVo);
         }
         ExcelUtils.exportExcel(personList, "员工信息表", "员工信息", PersonExportVo.class, "员工信息", response);
